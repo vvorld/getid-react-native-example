@@ -42,28 +42,21 @@ public class GetID extends ReactContextBaseJavaModule {
     public void start(String token, String url) {
         List<FlowScreens> flowItems = new ArrayList<>();
         flowItems.add(FlowScreens.SCREEN_CONSENT);
-        flowItems.add(FlowScreens.SCREEN_FORM);
         flowItems.add(FlowScreens.SCREEN_DOCUMENT);
         flowItems.add(FlowScreens.SCREEN_SELFIE);
         flowItems.add(FlowScreens.SCREEN_LIVENESS);
-        HashMap<String, ArrayList<FormField>> formFields = new HashMap<>();
-        List<FormField> fields = new ArrayList<>();
-        FormConfig formConfig = new FormConfig(false, formFields);
         ArrayList<VerificationTypesEnum> verificationTypes = new ArrayList<>();
         verificationTypes.add(VerificationTypesEnum.FACE_MATCHING);
         verificationTypes.add(VerificationTypesEnum.DATA_EXTRACTION);
-        DesignColorSchema designColorSchema = new DesignColorSchema(null,null, null,
+        DesignColorSchema designColorSchema = new DesignColorSchema(null, null, null,
                 null, "#0E1C2C", null, "#FFFFFF", false);
         ConfigurationPreset configPreset = new ConfigurationPreset(
                 flowItems,
-                formConfig,
-                new SelfieConfig(10, true),
-                new VideoRecordingConfig("My name is...", 10),
-                new LivenessConfig(true, Collections.emptyList()),
-                new ThankYouConfig("Thank you!", "", "Next"),
-                new CountryDocumentConfig(null, null,
-                        true, true, null,
-                        false),
+                null,
+                null,
+                null,
+                null,
+                null,
                 verificationTypes,
                 null,
                 designColorSchema);

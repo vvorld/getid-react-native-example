@@ -8,14 +8,15 @@ const VerifyButton = () => {
   // Note: Don't use your SDK key in the client-side code in the production environment.
   const apiUrl = 'API_URL';
   const sdkKey = 'SDK_KEY';
+  const flowName = "getid-doc-selfie";
 
   const getToken = () => {
-    return fetch(apiUrl + '/sdk/v1/token', {
+    return fetch(apiUrl + '/sdk/v2/token', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
-        'apikey': sdkKey
+        'x-sdk-key': sdkKey
       }
     });
   };
@@ -24,7 +25,7 @@ const VerifyButton = () => {
     getToken()
     .then((response) => response.json())
     .then((json) => {
-      GetID.start(json.token, apiUrl);
+      GetID.start(apiUrl, json.token, flowName);
     });
   };
 

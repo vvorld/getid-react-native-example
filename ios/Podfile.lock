@@ -18,7 +18,7 @@ PODS:
     - boost-for-react-native
     - DoubleConversion
     - glog
-  - GetID (1.9.0)
+  - GetID (2.0.0)
   - glog (0.3.5)
   - RCTRequired (0.63.4)
   - RCTTypeSafety (0.63.4):
@@ -253,7 +253,7 @@ DEPENDENCIES:
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/Libraries/FBReactNativeSpec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
-  - GetID (= 1.9.0)
+  - GetID (= 2.0.0)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
@@ -344,7 +344,7 @@ SPEC CHECKSUMS:
   FBLazyVector: 3bb422f41b18121b71783a905c10e58606f7dc3e
   FBReactNativeSpec: f2c97f2529dd79c083355182cc158c9f98f4bd6e
   Folly: b73c3869541e86821df3c387eb0af5f65addfab4
-  GetID: 59d2805c0d8db386299357609872c96ef4e9c0b9
+  GetID: 4adb1c507b88fc2b6dad3d5b7ab3eaa05feb8a79
   glog: 40a13f7840415b9a77023fbcae0f1e6f43192af3
   RCTRequired: 082f10cd3f905d6c124597fd1c14f6f2655ff65e
   RCTTypeSafety: 8c9c544ecbf20337d069e4ae7fd9a377aadf504b
@@ -368,6 +368,6 @@ SPEC CHECKSUMS:
   ReactCommon: 73d79c7039f473b76db6ff7c6b159c478acbbb3b
   Yoga: 4bd86afe9883422a7c4028c00e34790f560923d6
 
-PODFILE CHECKSUM: 290b73f3a9c2593c4cf504cb68ae30067356be6e
+PODFILE CHECKSUM: adf68a8f2d2713ef2363ee7be24dadf47c91e62d
 
 COCOAPODS: 1.10.1

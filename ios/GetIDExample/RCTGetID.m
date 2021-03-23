@@ -5,26 +5,17 @@
 //  Created by Mikhail Akopov on 16.12.2020.
 //
 
-
 #import "RCTGetID.h"
-#import "AppDelegate.h"
-
-@import GetID;
+#import "GetIDExample-Swift.h"
 
 @implementation RCTGetID
 
 RCT_EXPORT_MODULE(GetID);
 
-RCT_EXPORT_METHOD(start:(NSString *)token url:(NSString *)url) {
+RCT_EXPORT_METHOD(start:(NSString *)url token:(NSString *)token flowName:(NSString *)flowName) {
   
   dispatch_async(dispatch_get_main_queue(), ^{
-    [GIDFactory makeGetIDViewControllerWithToken:token url:url then:^(GetIDViewController *viewController, NSError *error) {
-        if (error != nil) {
-            return NSLog(@"%@", error.description);
-        }
-        AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-        [delegate.window.rootViewController presentViewController:viewController animated:YES completion:nil];
-    }];
+    [[GetIDSwiftWrapper new] startVerificationFlowWithApiUrl:url token:token flowName:flowName];
   });
 }
 

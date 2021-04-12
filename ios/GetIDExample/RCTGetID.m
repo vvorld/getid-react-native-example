@@ -12,10 +12,10 @@
 
 RCT_EXPORT_MODULE(GetID);
 
-RCT_EXPORT_METHOD(start:(NSString *)url token:(NSString *)token flowName:(NSString *)flowName) {
+RCT_EXPORT_METHOD(start:(NSString *)url token:(NSString *)token flowName:(NSString *)flowName metadataLabels:(NSDictionary *)metadataLabels) {
   
   dispatch_async(dispatch_get_main_queue(), ^{
-    [[GetIDSwiftWrapper new] startVerificationFlowWithApiUrl:url token:token flowName:flowName];
+    [[GetIDSwiftWrapper new] startVerificationFlowWithApiUrl:url token:token flowName:flowName metadataLabels:metadataLabels];
   });
 }
 

@@ -5,6 +5,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.sdk.getidlib.config.GetIDSDK;
 import com.sdk.getidlib.model.app.auth.Token;
+import com.sdk.getidlib.model.app.metadata.Metadata;
 
 public class GetID extends ReactContextBaseJavaModule {
 
@@ -21,13 +22,13 @@ public class GetID extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void start(String url, String token, String flowName) {
+    public void start(String url, String token, String flowName, String externalId) {
         new GetIDSDK().startVerificationFlow(
                 appContext,
                 url,
                 new Token(token),
                 flowName,
-                null,
+                new Metadata(externalId, null),
                 null,
                 null,
                 null

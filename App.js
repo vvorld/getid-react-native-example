@@ -9,6 +9,7 @@ const VerifyButton = () => {
   const apiUrl = 'API_URL';
   const sdkKey = 'SDK_KEY';
   const flowName = "getid-doc-selfie";
+  const externalId = 'some-id';
 
   const getToken = () => {
     return fetch(apiUrl + '/sdk/v2/token', {
@@ -25,7 +26,7 @@ const VerifyButton = () => {
     getToken()
     .then((response) => response.json())
     .then((json) => {
-      GetID.start(apiUrl, json.token, flowName);
+      GetID.start(apiUrl, json.token, flowName, externalId);
     });
   };
 

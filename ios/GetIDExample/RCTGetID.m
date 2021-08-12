@@ -7,6 +7,7 @@
 
 #import "RCTGetID.h"
 #import "GetIDExample-Swift.h"
+#import "AppDelegate.h"
 
 @implementation RCTGetID
 
@@ -15,7 +16,9 @@ RCT_EXPORT_MODULE(GetID);
 RCT_EXPORT_METHOD(start:(NSString *)url token:(NSString *)token flowName:(NSString *)flowName) {
   
   dispatch_async(dispatch_get_main_queue(), ^{
-    [[GetIDSwiftWrapper new] startVerificationFlowWithApiUrl:url token:token flowName:flowName];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    GetIDSwiftWrapper *wrapper = appDelegate.getIDWrapper;
+    [wrapper startVerificationFlowWithApiUrl:url token:token flowName:flowName];
   });
 }
 

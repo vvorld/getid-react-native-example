@@ -222,7 +222,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GetIDExample/Pods-GetIDExample-frameworks.sh",
-				"${PODS_ROOT}/GetID/Carthage/Build/iOS/GetID.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/GetID/GetID.framework/GetID",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (

@@ -6,6 +6,10 @@
 //
 
 #import <React/RCTBridgeModule.h>
+#import <React/RCTEventEmitter.h>
 #import <UIKit/UIKit.h>
-@interface RCTGetID : NSObject <RCTBridgeModule>
+#import "GetIDExample-Swift.h"
+
+@interface RCTGetID : RCTEventEmitter <RCTBridgeModule, GetIDSwiftWrapperDelegate>
+@property (nonatomic, strong) GetIDSwiftWrapper *getIDSwiftWrapper;
 @end

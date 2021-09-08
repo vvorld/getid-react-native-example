@@ -1,6 +1,12 @@
 import GetID
 
+@objc protocol GetIDSwiftWrapperDelegate: AnyObject {
+  func sendGetIDEvent(body: [String: String])
+}
+
 @objc final class GetIDSwiftWrapper: NSObject {
+  @objc weak var delegate: GetIDSwiftWrapperDelegate?
+
   @objc func startVerificationFlow(apiUrl: String, token: String, flowName: String) {
     GetIDSDK.delegate = self
     GetIDSDK.startVerificationFlow(
@@ -13,18 +19,18 @@ import GetID
 
 extension GetIDSwiftWrapper: GetIDSDKDelegate {
   func verificationFlowDidStart() {
-    NSLog("verificationFlowDidStart")
+    delegate?.sendGetIDEvent(body: ["eventType": "verificationFlowDidStart"])
   }
 
   func verificationFlowDidCancel() {
-    NSLog("verificationFlowDidCancel")
+    delegate?.sendGetIDEvent(body: ["eventType": "verificationFlowDidCancel"])
   }
 
   func verificationFlowDidFail(_ error: GetIDError) {
-    NSLog("verificationFlowDidFail: \(error)")
+    delegate?.sendGetIDEvent(body: ["eventType": "verificationFlowDidFail", "error": "\(error)"])
   }
 
   func verificationFlowDidComplete(_ application: GetIDApplication) {
-    NSLog("verificationFlowDidComplete: \(application.applicationId)")
+    delegate?.sendGetIDEvent(body: ["eventType": "verificationFlowDidComplete", "applicationId": "\(application.applicationId)"])
   }
 }

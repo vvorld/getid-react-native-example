@@ -10,39 +10,30 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		53A2E14004185B6655E28C81 /* libPods-GetIDExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CC3AEEEC3DCE64CFEC1EC6 /* libPods-GetIDExample.a */; };
 		749DDC69260A3CEE00F1F98B /* GetIDSwiftWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749DDC68260A3CEE00F1F98B /* GetIDSwiftWrapper.swift */; };
 		74C989C5258B66C800D606AB /* RCTGetID.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C989C4258B66C800D606AB /* RCTGetID.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		FA9DB1708137A9ACEAF55393 /* libPods-GetIDExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B03BAB2DB04A4C6D7480C43 /* libPods-GetIDExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		00CC3AEEEC3DCE64CFEC1EC6 /* libPods-GetIDExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GetIDExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* GetIDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetIDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GetIDExample/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = GetIDExample/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GetIDExample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GetIDExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = GetIDExample/main.m; sourceTree = "<group>"; };
-		3648E9417FFC4FFC73BD6C98 /* Pods-GetIDExample-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetIDExample-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-GetIDExample-tvOSTests/Pods-GetIDExample-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		58A020385517231A6AEE2BCE /* libPods-GetIDExample-GetIDExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GetIDExample-GetIDExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		637A3A01A0DC11CA7E7B938C /* Pods-GetIDExample-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetIDExample-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-GetIDExample-tvOSTests/Pods-GetIDExample-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6B03BAB2DB04A4C6D7480C43 /* libPods-GetIDExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GetIDExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F85465B67DC6173CC5815CE /* Pods-GetIDExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetIDExample.release.xcconfig"; path = "Target Support Files/Pods-GetIDExample/Pods-GetIDExample.release.xcconfig"; sourceTree = "<group>"; };
 		749DDC67260A3CEE00F1F98B /* GetIDExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GetIDExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		749DDC68260A3CEE00F1F98B /* GetIDSwiftWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GetIDSwiftWrapper.swift; path = GetIDExample/GetIDSwiftWrapper.swift; sourceTree = "<group>"; };
 		74C989C3258B66C800D606AB /* RCTGetID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTGetID.h; path = GetIDExample/RCTGetID.h; sourceTree = "<group>"; };
 		74C989C4258B66C800D606AB /* RCTGetID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTGetID.m; path = GetIDExample/RCTGetID.m; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = GetIDExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8781909F671F5FDD4D041F11 /* libPods-GetIDExample-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GetIDExample-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0B4E15F3926053A34A7A477 /* Pods-GetIDExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetIDExample.debug.xcconfig"; path = "Target Support Files/Pods-GetIDExample/Pods-GetIDExample.debug.xcconfig"; sourceTree = "<group>"; };
-		A0C9C9842754AE5A3A2FA904 /* Pods-GetIDExample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetIDExample-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-GetIDExample-tvOS/Pods-GetIDExample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		C74A05955B75A85750710FB7 /* libPods-GetIDExample-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GetIDExample-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3121854A0C87EBB0A382B4E /* Pods-GetIDExample-GetIDExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetIDExample-GetIDExampleTests.release.xcconfig"; path = "Target Support Files/Pods-GetIDExample-GetIDExampleTests/Pods-GetIDExample-GetIDExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		83F5BB994948EA3C4E695E03 /* Pods-GetIDExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetIDExample.debug.xcconfig"; path = "Target Support Files/Pods-GetIDExample/Pods-GetIDExample.debug.xcconfig"; sourceTree = "<group>"; };
+		D7FBEA4EC0651C562452F55E /* Pods-GetIDExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetIDExample.release.xcconfig"; path = "Target Support Files/Pods-GetIDExample/Pods-GetIDExample.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F2B953756729E8F9D292DAD3 /* Pods-GetIDExample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetIDExample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-GetIDExample-tvOS/Pods-GetIDExample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		FC945E2E5C4A4E3E20063961 /* Pods-GetIDExample-GetIDExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetIDExample-GetIDExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-GetIDExample-GetIDExampleTests/Pods-GetIDExample-GetIDExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA9DB1708137A9ACEAF55393 /* libPods-GetIDExample.a in Frameworks */,
+				53A2E14004185B6655E28C81 /* libPods-GetIDExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,14 +51,8 @@
 		11CBD636340ECB18CE7C7646 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A0B4E15F3926053A34A7A477 /* Pods-GetIDExample.debug.xcconfig */,
-				6F85465B67DC6173CC5815CE /* Pods-GetIDExample.release.xcconfig */,
-				FC945E2E5C4A4E3E20063961 /* Pods-GetIDExample-GetIDExampleTests.debug.xcconfig */,
-				D3121854A0C87EBB0A382B4E /* Pods-GetIDExample-GetIDExampleTests.release.xcconfig */,
-				A0C9C9842754AE5A3A2FA904 /* Pods-GetIDExample-tvOS.debug.xcconfig */,
-				F2B953756729E8F9D292DAD3 /* Pods-GetIDExample-tvOS.release.xcconfig */,
-				637A3A01A0DC11CA7E7B938C /* Pods-GetIDExample-tvOSTests.debug.xcconfig */,
-				3648E9417FFC4FFC73BD6C98 /* Pods-GetIDExample-tvOSTests.release.xcconfig */,
+				83F5BB994948EA3C4E695E03 /* Pods-GetIDExample.debug.xcconfig */,
+				D7FBEA4EC0651C562452F55E /* Pods-GetIDExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -95,10 +80,7 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				6B03BAB2DB04A4C6D7480C43 /* libPods-GetIDExample.a */,
-				58A020385517231A6AEE2BCE /* libPods-GetIDExample-GetIDExampleTests.a */,
-				C74A05955B75A85750710FB7 /* libPods-GetIDExample-tvOS.a */,
-				8781909F671F5FDD4D041F11 /* libPods-GetIDExample-tvOSTests.a */,
+				00CC3AEEEC3DCE64CFEC1EC6 /* libPods-GetIDExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,14 +121,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "GetIDExample" */;
 			buildPhases = (
-				E94AAF8BBE681D62A9E343A6 /* [CP] Check Pods Manifest.lock */,
+				2A4D0F8D14D748B6715A3F87 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				5D1DE37C7566B635EF5D481C /* [CP] Copy Pods Resources */,
-				4CDCF1CC6D421A980F4AB68A /* [CP] Embed Pods Frameworks */,
+				54AA4216E386C03C55DE889E /* [CP] Embed Pods Frameworks */,
+				8FC5CF953095AB39660855BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,43 +197,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		4CDCF1CC6D421A980F4AB68A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GetIDExample/Pods-GetIDExample-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/GetID/GetID.framework/GetID",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GetID.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GetIDExample/Pods-GetIDExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5D1DE37C7566B635EF5D481C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GetIDExample/Pods-GetIDExample-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GetIDExample/Pods-GetIDExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E94AAF8BBE681D62A9E343A6 /* [CP] Check Pods Manifest.lock */ = {
+		2A4D0F8D14D748B6715A3F87 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,6 +217,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54AA4216E386C03C55DE889E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GetIDExample/Pods-GetIDExample-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/GetID/GetID.framework/GetID",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GetID.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GetIDExample/Pods-GetIDExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FC5CF953095AB39660855BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GetIDExample/Pods-GetIDExample-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GetIDExample/Pods-GetIDExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -311,12 +293,13 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0B4E15F3926053A34A7A477 /* Pods-GetIDExample.debug.xcconfig */;
+			baseConfigurationReference = 83F5BB994948EA3C4E695E03 /* Pods-GetIDExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = GetIDExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -335,11 +318,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F85465B67DC6173CC5815CE /* Pods-GetIDExample.release.xcconfig */;
+			baseConfigurationReference = D7FBEA4EC0651C562452F55E /* Pods-GetIDExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = GetIDExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (

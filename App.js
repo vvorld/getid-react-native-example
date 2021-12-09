@@ -1,7 +1,9 @@
 import React from 'react';
-import { NativeModules, Button, View } from 'react-native';
+import { NativeModules, NativeEventEmitter, Button, View } from 'react-native';
 
 const { GetID } = NativeModules;
+const GetIDEmitter = new NativeEventEmitter(GetID);
+GetIDEmitter.addListener('GetIDEvent', (body) => console.log(body))
 
 const VerifyButton = () => {
 

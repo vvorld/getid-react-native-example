@@ -8,6 +8,6 @@ target 'GetIDExample' do
 
   use_react_native!(:path => config["reactNativePath"])
 
-  pod 'GetID', '2.3.0'
+  pod 'GetID', '2.6.0'
 
 end

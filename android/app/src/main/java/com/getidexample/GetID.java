@@ -5,6 +5,9 @@ import android.util.Log;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.sdk.getidlib.app.common.receivers.BroadcastReceiverListener;
 import com.sdk.getidlib.config.GetIDSDK;
 import com.sdk.getidlib.model.app.auth.Token;
@@ -12,6 +15,7 @@ import com.sdk.getidlib.model.entity.events.GetIDApplication;
 import com.sdk.getidlib.model.entity.events.GetIDError;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class GetID extends ReactContextBaseJavaModule {
 
@@ -38,32 +42,45 @@ public class GetID extends ReactContextBaseJavaModule {
                 null,
                 null,
                 null,
-                new GetIDEventListener()
+                new GetIDEventListener(appContext)
         );
     }
 }
 
 class GetIDEventListener implements BroadcastReceiverListener {
 
-    private static final String TAG = "GetIDEventListener";
+    private ReactApplicationContext appContext;
+
+    GetIDEventListener(ReactApplicationContext context) {
+        appContext = context;
+    }
 
     @Override
     public void verificationFlowCancel() {
-        Log.d(TAG, "verificationFlowCancel:");
+        sendEvent("verificationFlowDidCancel", null, null);
     }
 
     @Override
     public void verificationFlowComplete(@NotNull GetIDApplication getIDApplication) {
-        Log.d(TAG, String.format("verificationFlowComplete: %s", getIDApplication.getApplicationId()));
+        sendEvent("verificationFlowDidComplete", "applicationId", getIDApplication.getApplicationId());
     }
 
     @Override
     public void verificationFlowFail(@NotNull GetIDError getIDError) {
-        Log.d(TAG, String.format("verificationFlowFail: %s", getIDError.name()));
+        sendEvent("verificationFlowDidFail", "error", getIDError.name());
     }
 
     @Override
     public void verificationFlowStart() {
-        Log.d(TAG, "verificationFlowStart:");
+        sendEvent("verificationFlowDidStart", null, null);
+    }
+
+    private void sendEvent(String eventType, @Nullable String additionalKey, @Nullable String additionalValue) {
+        WritableMap arguments = Arguments.createMap();
+        arguments.putString("eventType", eventType);
+        if (additionalKey != null && additionalValue != null) {
+            arguments.putString(additionalKey, additionalValue);
+        }
+        appContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit("GetIDEvent", arguments);
     }
 }

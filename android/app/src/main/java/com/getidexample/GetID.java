@@ -31,6 +31,13 @@ public class GetID extends ReactContextBaseJavaModule {
         return "GetID";
     }
 
+    @ReactMethod
+    public void addListener(String eventName) {
+    }
+
+    @ReactMethod
+    public void removeListeners(Integer count) {
+    }
 
     @ReactMethod
     public void start(String url, String token, String flowName) {

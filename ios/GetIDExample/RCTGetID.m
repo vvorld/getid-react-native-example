@@ -13,6 +13,10 @@
   bool hasListeners;
 }
 
++ (BOOL)requiresMainQueueSetup {
+  return YES;
+}
+
 - (instancetype)init {
   if (self = [super init]) {
     self.getIDSwiftWrapper = [GetIDSwiftWrapper new];

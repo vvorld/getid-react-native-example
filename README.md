@@ -28,7 +28,7 @@ Open `android` in Android Studio and run the app or `npx react-native start` in 
 
 ## How to install GetID SDK from scratch
 **iOS**
-1. Add `pod 'GetID', '2.6.0'` to `ios/Podfile`. The number of the latest version of GetID iOS SDK can be found [here](https://github.com/vvorld/getid-ios-sdk/releases).
+1. Add `pod 'GetID', '2.8.0'` to `ios/Podfile`. The number of the latest version of GetID iOS SDK can be found [here](https://github.com/vvorld/getid-ios-sdk/releases).
 2. In `ios` folder run `pod install`.
 3. Add `NSPhotoLibraryUsageDescription`, `NSMicrophoneUsageDescription` and `NSCameraUsageDescription` to `ios/YourProjectName/Info.plist`. See description examples in this repository.
 4. Open the `.xcworkspace` file in Xcode. Select `File > New > File > Swift File`, name it `GetIDSwiftWrapper`. When Xcode asks whether you want to add a bridging header file, confirm that you want to create it.

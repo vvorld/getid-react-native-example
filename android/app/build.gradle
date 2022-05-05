@@ -179,7 +179,7 @@ android {
 }
 
 dependencies {
-    implementation 'ee.getid:getidlib:2.6.0'
+    implementation 'ee.getid:getidlib:2.6.3'
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //noinspection GradleDynamicVersion

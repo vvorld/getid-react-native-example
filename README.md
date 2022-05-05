@@ -37,7 +37,7 @@ Open `android` in Android Studio and run the app or `npx react-native start` in 
 
 **Android**
 1. Add `jcenter()` to `allprojects.repositories` in `build.gradle` before `mavenCentral()`.
-2. Add `implementation 'ee.getid:getidlib:2.6.0'` to `android/app/build.gradle`. The number of the latest version of GetID Android SDK can be found [here](https://github.com/vvorld/getid-android-sdk/releases).
+2. Add `implementation 'ee.getid:getidlib:2.6.3'` to `android/app/build.gradle`. The number of the latest version of GetID Android SDK can be found [here](https://github.com/vvorld/getid-android-sdk/releases).
 3. Add `implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'` to `android/app/build.gradle`.
 4. Copy `GetID.java` file from this repository to `android/app/src/main/java/com/yourprojectname`.
 5. Copy `MyAppPackage.java` file from this repository to `android/app/src/main/java/com/yourprojectname`.

@@ -13,6 +13,8 @@ git clone https://github.com/vvorld/getid-react-native-example
 cd getid-react-native-example
 npm install
 ```
+Use 'npm install --legacy-peer-deps' to use legacy dependencies as is
+
 
 Open `App.js` file and set `apiUrl` and `sdkKey`.
 
@@ -24,7 +26,7 @@ pod install
 Then open `ios/GetIDExample.workspace` in Xcode and run the app or just type `npx react-native run-ios` in the root project directory.
 
 ### Android
-Open `android` in Android Studio and run the app or `npx react-native start` in one Terminal window and `npx react-native run-android` in another.
+Open `android` in Android Studio and run the app or `npx react-native start` in one Terminal window and command `npx react-native run-android` from root folder in another.
 
 ## How to install GetID SDK from scratch
 **iOS**
